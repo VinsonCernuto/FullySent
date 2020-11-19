@@ -1,0 +1,23 @@
+{
+  "name": "fullysent",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyricsduda/FullySent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lyricsduda/FullySent/issues"
+  },
+  "homepage": "https://github.com/Lyricsduda/FullySent#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
