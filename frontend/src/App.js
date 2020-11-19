@@ -1,7 +1,6 @@
 import React from "react";
 import logo from './images/logo.png';
-import ProductScreen from './screens/ProductScreen';
-import ProductItemScreen from './screens/ProductItemScreen';
+
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -9,8 +8,16 @@ import {
 	Link,
 	BrowserRouter
 } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
 
+// Screens
+import HomeScreen from "./screens/HomeScreen";
+import TeamScreen from "./screens/TeamScreen";
+import MediaScreen from "./screens/MediaScreen";
+import CompanyScreen from "./screens/CompanyScreen";
+import ContactScreen from "./screens/ContactScreen";
+import ProductScreen from './screens/ProductScreen';
+import ProductItemScreen from './screens/ProductItemScreen';
+import CommingSoonScreen from "./screens/CommingSoonScreen";
 
 
 function App() {
@@ -30,10 +37,10 @@ function App() {
 											<ul className="nav" id="nav">
 												<ul className="nav" id="nav">
 												<li><a href="/products">Shop</a></li>
-													<li><a href="team.html">Team</a></li>
-													<li><a href="experiance.html">Media</a></li>
-													<li><a href="shop.html">Company</a></li>
-													<li><a href="contact.html">Contact</a></li>
+													<li><a href="/team">Team</a></li>
+													<li><a href="/media">Media</a></li>
+													<li><a href="/company">Company</a></li>
+													<li><a href="/contact">Contact</a></li>
 													<div className="clear"> </div>
 												</ul>
 											</ul>
@@ -46,9 +53,14 @@ function App() {
 
 					{/* May have to switch this to  <main> and put this in the productscreen screen */}
 					<div className="main">
-							<Route path="/product/:id" component={ProductItemScreen} />
-							<Route path="/products" exact={true} component={ProductScreen} />
 							<Route path="/" exact={true} component={HomeScreen} />
+							<Route path="/products" exact={true} component={ProductScreen} />
+							<Route path="/product/:id" component={ProductItemScreen} />
+							<Route path="/team" exact={true} component={TeamScreen} />
+							<Route path="/media" exact={true} component={MediaScreen} />
+							<Route path="/company" exact={true} component={CompanyScreen} />
+							<Route path="/contact" exact={true} component={ContactScreen} />
+							<Route path="/comingSoon" exact={true} component={CommingSoonScreen} />
 					</div>
 
 
@@ -75,8 +87,8 @@ function App() {
 								<div className="col-md-3">
 									<ul className="footer_box">
 										<h4>Customer Support</h4>
-										<li><a href="#">Contact Us</a></li>
-										<li><a href="#">Warranty</a></li>
+										<li><a href="/comingSoon">Contact Us</a></li>
+										<li><a href="/comingSoon">Warranty</a></li>
 									</ul>
 								</div>
 								<div className="col-md-3">
