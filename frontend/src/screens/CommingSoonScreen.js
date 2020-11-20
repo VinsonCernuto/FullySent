@@ -6,7 +6,6 @@ export default function CommingSoonScreen() {
         <div class="comingsoon">
         <h1>Under Construction</h1>
         <img src={shread} alt="" />
-    </div>
-       
+    </div>  
     )
 }
