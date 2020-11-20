@@ -958,3 +958,11 @@ li.youtube a span {
 	color: #a02020;
 	background: #ffe0e0e0;
 }
+
+/* Map start */
+.map{
+	color:#666;
+	text-align:left;
+	font-size:12px
+}
+/* Map end */
