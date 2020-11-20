@@ -1,5 +1,5 @@
 import React from 'react'
-import shread from '../images/Logos/sorry_we_are_shredding.png'
+import shread from '../images/logos/sorry_we_are_shredding.png'
 
 export default function CommingSoonScreen() {
     return (
