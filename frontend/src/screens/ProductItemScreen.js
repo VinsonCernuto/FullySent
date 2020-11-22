@@ -61,7 +61,7 @@ export default function ProductItemScreen(props) {
                                         </div>
                                         <div className="col-md-3">
                                             <div className="box-info-product">
-                                                <p className="price2">{product.price}</p>
+                                                <p className="price2">${product.price}</p>
                                                 <div>Status</div>
                                                 <div>
                                                     {product.countInStock > 0 ? (

@@ -6,7 +6,7 @@ const data = {
             name: 'FLLYSNT Tee',
             image: './images/products/tee.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         }, 
         {
@@ -14,7 +14,7 @@ const data = {
             name: 'FULLYSENT Red Tee',
             image: './images/products/redboxtee.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
         {
@@ -22,7 +22,7 @@ const data = {
             name: 'FLLYSNT Box Hoodie',
             image: './images/products/tee.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
         {
@@ -30,7 +30,7 @@ const data = {
             name: 'FLLYSNT Hoodie',
             image: './images/products/regularhoodie.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
         {
@@ -38,7 +38,7 @@ const data = {
             name: 'FLLYSNT Hat',
             image: './images/products/hat.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
         {
@@ -46,7 +46,7 @@ const data = {
             name: 'FULLYSENT Windbreaker',
             image: './images/products/windbreaker.png',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
         {
@@ -54,7 +54,7 @@ const data = {
             name: 'FLLYSNT Tee',
             image: './images/products/tee.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
         {
@@ -62,7 +62,7 @@ const data = {
             name: 'FULYLSENT Yetti',
             image: './images/products/yetti.jpg',
            description: 'Lorem ipsum consectetuer adipiscing',
-            price: '$12.00',
+            price: 12.00,
             countInStock: 11
         },
 
