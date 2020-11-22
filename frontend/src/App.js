@@ -1,7 +1,8 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import logo from './images/Logos/logo.png';
-import { useSelector } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './images/logos/logo.png';
+import { useDispatch, useSelector } from 'react-redux';
+import { signout } from './actions/userActions';
 
 
 import {
@@ -22,12 +23,20 @@ import ProductScreen from './screens/ProductScreen';
 import ProductItemScreen from './screens/ProductItemScreen';
 import CartScreen from './screens/CartScreen';
 import CommingSoonScreen from "./screens/CommingSoonScreen";
+import SigninScreen from './screens/SigninScreen';
 
 
 function App() {
 
 	const cart = useSelector((state) => state.cart);
 	const { cartItems } = cart;
+
+	const userSignin = useSelector((state) => state.userSignin);
+	const { userInfo } = userSignin;
+	const dispatch = useDispatch();
+	const signoutHandler = () => {
+		dispatch(signout());
+	};
 
 
 	return (
@@ -59,7 +68,24 @@ function App() {
 													{cartItems.length > 0 && (
 														<span className="badge">{cartItems.length}</span>
 													)}
+													<br />
 												</Link>
+													{userInfo ? (
+														<div className="dropdown">
+															<Link to="#">
+																{userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+															</Link>
+															<ul className="dropdown-content">
+																<li>
+																	<Link to="#signout" onClick={signoutHandler}>
+																		Sign Out
+                   		 											</Link>
+																</li>
+															</ul>
+														</div>
+													) : (
+															<Link to="/signin">Sign In</Link>
+														)}
 												</li>
 											</ul>
 										</div>
@@ -80,6 +106,7 @@ function App() {
 						<Route path="/company" exact={true} component={CompanyScreen} />
 						<Route path="/contact" exact={true} component={ContactScreen} />
 						<Route path="/comingSoon" exact={true} component={CommingSoonScreen} />
+						<Route path="/signin" component={SigninScreen}></Route>
 					</div>
 
 
