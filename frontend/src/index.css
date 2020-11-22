@@ -1333,3 +1333,14 @@ p.m_8{
   .price {
 	font-size: 2rem;
   }
+
+  .product-slider H2{
+	  text-align: center;
+	  font-weight: bold;
+	  font-size: 45px;
+  }
+
+  .product-slider p{
+	  text-align: center;
+  }
+
