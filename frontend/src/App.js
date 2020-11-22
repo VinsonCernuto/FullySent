@@ -1,5 +1,6 @@
 import React from "react";
 import logo from './images/logos/logo.png';
+import { useSelector } from 'react-redux';
 
 import {
 	BrowserRouter as Router,
@@ -22,6 +23,11 @@ import CommingSoonScreen from "./screens/CommingSoonScreen";
 
 
 function App() {
+
+	const cart = useSelector((state) => state.cart);
+	const { cartItems } = cart;
+
+
 	return (
 		<BrowserRouter>
 			<div>
@@ -32,18 +38,27 @@ function App() {
 								<div className="col-md-12">
 									<div className="header-left">
 										<div className="logo">
-											<a href="/"><img src={logo} width="100" height="50" alt="" /></a>
+											<Link to="/"><img src={logo} width="100" height="50" alt="" /></Link>
 										</div>
 										<div className="menu">
 											<ul className="nav" id="nav">
 												<ul className="nav" id="nav">
-													<li><a href="/products">Shop</a></li>
-													<li><a href="/team">Team</a></li>
-													<li><a href="/media">Media</a></li>
-													<li><a href="/company">Company</a></li>
-													<li><a href="/contact">Contact</a></li>
-													<div className="clear"> </div>
+													<li><Link to="/products">Shop</Link></li>
+													<li><Link to="/team">Team</Link></li>
+													<li><Link to="/media">Media</Link></li>
+													<li><Link to="/company">Company</Link></li>
+													<li><Link to="/contact">Contact</Link></li>
 												</ul>
+											</ul>
+										</div>
+										<div class="header_right">
+											<ul class="icon1 sub-icon1 profile_img">
+												<li><Link class="active-icon c1" to="/cart">
+													{cartItems.length > 0 && (
+														<span className="badge">{cartItems.length}</span>
+													)}
+												</Link>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -73,26 +88,26 @@ function App() {
 								<div class="col-md-3">
 									<ul class="footer_box">
 										<h4>Products</h4>
-										<li><a href="/comingSoon">Collections</a></li>
-										<li><a href="/products">Apparel</a></li>
-										<li><a href="/products">Accessories</a></li>
+										<li><Link to="/comingSoon">Collections</Link></li>
+										<li><Link to="/products">Apparel</Link></li>
+										<li><Link to="/products">Accessories</Link></li>
 									</ul>
 								</div>
 								<div class="col-md-3">
 									<ul class="footer_box">
 										<h4>About</h4>
-										<li><a href="/media">Media</a></li>
-										<li><a href="/comingSoon">Sponserships</a></li>
-										<li><a href="/team">Team</a></li>
+										<li><Link to="/media">Media</Link></li>
+										<li><Link to="/comingSoon">Sponserships</Link></li>
+										<li><Link to="/team">Team</Link></li>
 									</ul>
 								</div>
 								<div class="col-md-3">
 									<ul class="footer_box">
 										<h4>Customer Support</h4>
-										<li><a href="/contact">Contact Us</a></li>
-										<li><a href="/comingSoon">Shipping and Order Tracking</a></li>
-										<li><a href="/comingSoon">Easy Returns</a></li>
-										<li><a href="/comingSoon">Warranty</a></li>
+										<li><Link to="/contact">Contact Us</Link></li>
+										<li><Link to="/comingSoon">Shipping and Order Tracking</Link></li>
+										<li><Link to="/comingSoon">Easy Returns</Link></li>
+										<li><Link to="/comingSoon">Warranty</Link></li>
 									</ul>
 								</div>
 								<div class="col-md-3">
@@ -106,9 +121,9 @@ function App() {
 											</form>
 										</div>
 										<ul class="social">
-											<li class="facebook"><a href="https://www.facebook.com/FullySent" target="_blank"><span> </span></a></li>
-											<li class="instagram"><a href="https://www.instagram.com/fllysnt/" target="_blank"><span> </span></a></li>
-											<li class="youtube"><a href="https://www.youtube.com/channel/UCBmRiM8r5nf3wDWuQCCgH4g" target="_blank"><span> </span></a></li>
+											<li class="facebook"><Link to="https://www.facebook.com/FullySent" target="_blank"><span> </span></Link></li>
+											<li class="instagram"><Link to="https://www.instagram.com/fllysnt/" target="_blank"><span> </span></Link></li>
+											<li class="youtube"><Link to="https://www.youtube.com/channel/UCBmRiM8r5nf3wDWuQCCgH4g" target="_blank"><span> </span></Link></li>
 										</ul>
 
 									</ul>
