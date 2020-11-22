@@ -10,11 +10,7 @@ export default function Product(props) {
                 <div className="shop_desc">
                     <h3><Link to="#">{product.name}</Link></h3>
                     <p>{product.description} </p>
-                    <span>{product.price}</span><br />
-                    <ul className="buttons">
-                        <li className="cart"><Link href="#">Add To Cart</Link></li>
-                        <li className="shop_btn"><Link href="#">Read More</Link></li>
-                    </ul>
+                    <span>${product.price}</span><br />                    
                 </div>
             </Link></div>
         </div>
