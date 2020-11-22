@@ -954,9 +954,20 @@ li.youtube a span {
 	background: #e0e0ff;
 }
 
+.alert-success{
+	color: #2020a0;
+	background: #e0e0ff;
+	border: 3px solid;
+	border-color: black;
+
+}
+
 .alert-danger{
 	color: #a02020;
 	background: #ffe0e0e0;
+	border: 3px solid;
+	border-color: black;
+
 }
 
 /* Map start */

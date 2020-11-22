@@ -17,6 +17,7 @@ import CompanyScreen from "./screens/CompanyScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ProductScreen from './screens/ProductScreen';
 import ProductItemScreen from './screens/ProductItemScreen';
+import CartScreen from './screens/CartScreen';
 import CommingSoonScreen from "./screens/CommingSoonScreen";
 
 
@@ -56,6 +57,7 @@ function App() {
 						<Route path="/" exact={true} component={HomeScreen} />
 						<Route path="/products" exact={true} component={ProductScreen} />
 						<Route path="/product/:id" component={ProductItemScreen} />
+						<Route path="/cart/:id?" component={CartScreen}></Route>
 						<Route path="/team" exact={true} component={TeamScreen} />
 						<Route path="/media" exact={true} component={MediaScreen} />
 						<Route path="/company" exact={true} component={CompanyScreen} />
