@@ -1,6 +1,8 @@
 import React from "react";
-import logo from './images/logos/logo.png';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import logo from './images/Logos/logo.png';
 import { useSelector } from 'react-redux';
+
 
 import {
 	BrowserRouter as Router,
