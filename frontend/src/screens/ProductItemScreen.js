@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { detailsProduct } from '../actions/productActions';
@@ -10,16 +10,16 @@ import MessageBox from '../componets/MessageBox';
 export default function ProductItemScreen(props) {
     const dispatch = useDispatch();
     const productId = props.match.params.id;
+    const [qty, setQty] = useState(1);
     const productDetails = useSelector((state) => state.productDetails);
     const { loading, error, product } = productDetails;
 
     useEffect(() => {
         dispatch(detailsProduct(productId));
     }, [dispatch, productId]);
-
-
-
-
+    const addToCartHandler = () => {
+        props.history.push(`/cart/${productId}?qty=${qty}`);
+    };
 
 
 
@@ -32,7 +32,6 @@ export default function ProductItemScreen(props) {
             ) : error ? (
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
-
                         <div className="main">
                             <div className="shop_top">
                                 <div className="container">
@@ -57,31 +56,42 @@ export default function ProductItemScreen(props) {
                                                     <li><a href="#">X-Large</a></li>
                                                     <li><a href="#">XX-Large</a></li>
                                                 </ul>
-                                                <div className="btn_form">
-                                                    <form>
-                                                        <input type="submit" value="buy now" title="" />
-                                                    </form>
-                                                </div>
                                             </div>
                                             <div className="clear"> </div>
                                         </div>
                                         <div className="col-md-3">
                                             <div className="box-info-product">
                                                 <p className="price2">{product.price}</p>
-                                                <ul className="prosuct-qty">
-                                                    <span>Quantity:</span>
-                                                    <select>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                    </select>
-                                                </ul>
-                                                <button type="submit" name="Submit" className="exclusive">
-                                                    <span>Add to cart</span>
-                                                </button>
+                                                <div>Status</div>
+                                                <div>
+                                                    {product.countInStock > 0 ? (
+                                                        <span className="alert-success">In Stock</span>
+                                                    ) : (
+                                                            <span className="alert-danger">Unavailable</span>
+                                                        )}
+                                                </div>
+                                                {product.countInStock > 0 && (
+                                                    <>
+                                                        <ul className="prosuct-qty">
+                                                            <span>Quantity:</span>
+                                                            <select
+                                                                value={qty}
+                                                                onChange={(e) => setQty(e.target.value)}
+                                                            >
+                                                                {[...Array(product.countInStock).keys()].map(
+                                                                    (x) => (
+                                                                        <option key={x + 1} value={x + 1}>
+                                                                            {x + 1}
+                                                                        </option>
+                                                                    )
+                                                                )}
+                                                            </select>
+                                                        </ul>
+                                                        <button onClick={addToCartHandler} name="Submit" className="exclusive">
+                                                            <span>Add to cart</span>
+                                                        </button>
+                                                    </>
+                                                )}
                                             </div>
                                         </div>
                                     </div>
