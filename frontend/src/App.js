@@ -24,6 +24,7 @@ import ProductItemScreen from './screens/ProductItemScreen';
 import CartScreen from './screens/CartScreen';
 import CommingSoonScreen from "./screens/CommingSoonScreen";
 import SigninScreen from './screens/SigninScreen';
+import RegisterScreen from './screens/RegisterScreen';
 
 
 function App() {
@@ -107,6 +108,7 @@ function App() {
 						<Route path="/contact" exact={true} component={ContactScreen} />
 						<Route path="/comingSoon" exact={true} component={CommingSoonScreen} />
 						<Route path="/signin" component={SigninScreen}></Route>
+						<Route path="/register" component={RegisterScreen}></Route>
 					</div>
 
 
