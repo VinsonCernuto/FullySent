@@ -38,7 +38,7 @@ export default function PlaceOrderScreen(props) {
         <div className="col-6">
           <ul>
             <li>
-              <div className="card card-body">
+              <div className="card card-body" >
                 <h2>Shipping</h2>
                 <p>
                   <strong>Name:</strong> {cart.shippingAddress.fullName} <br />

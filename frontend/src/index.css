@@ -1394,8 +1394,8 @@ p.m_8{
 	font-weight: bold;
   }
   .checkout-steps > div.active {
-	border-top-color: #f08000;
-	color: #f08000;
+	border-top-color: darkgray;
+	color:black;
   }
 
 .carousel-item{
@@ -1449,4 +1449,18 @@ p.m_8{
 
   button.small {
 	font-size: 1.2rem;
+  }
+
+  li{
+	text-decoration: none;
+  }
+
+  ul {
+	  list-style:none;
+    padding:0;
+    margin:0;
+  }
+
+  #orderul{
+	  margin-left: 10px;
   }

@@ -19,7 +19,7 @@ const data = {
     products: [
         { 
             name: 'FLLYSNT Tee',
-            image: './images/products/tee.jpg',
+            image: '../frontend/src/images/fullysentProducts/Season4/S15Shirt/S15Shirt-front.png',
            description: 'Lorem ipsum consectetuer adipiscing',
             price: 25.00,
             countInStock: 11

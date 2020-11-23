@@ -78,27 +78,29 @@ function App() {
 													)}
 													<br />
 												</Link>
-													{userInfo ? (
-														<div className="dropdown">
-															<li>
-																<Link to="/orderhistory">Order History</Link>
-															</li>
-															<Link to="#">
-																{userInfo.name} <i className="fa fa-caret-down"></i>{' '}
-															</Link>
-															<ul className="dropdown-content">
-																<li>
-																	<Link to="#signout" onClick={signoutHandler}>
-																		Sign Out
-                   		 											</Link>
-																</li>
-															</ul>
-														</div>
-													) : (
-															<Link to="/signin">Sign In</Link>
-														)}
+
 												</li>
 											</ul>
+											{userInfo ? (
+												<div className="dropdown">
+													<li>
+														<Link to="/orderhistory">Order History</Link>
+													</li>
+													<Link to="#">
+														{userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+													</Link>
+													<ul className="dropdown-content">
+														<li>
+															<Link to="#signout" onClick={signoutHandler}>
+																Sign Out
+                   		 											</Link>
+														</li>
+													</ul>
+												</div>
+											) : (
+													<Link to="/signin">Sign In</Link>
+												)}
+
 										</div>
 									</div>
 								</div>
