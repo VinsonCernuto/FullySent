@@ -8,7 +8,7 @@ html, body{
 	font-family: 'Open Sans', sans-serif;
 	background:#fff;
 	font-size: 100%;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-ssoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -1346,6 +1346,7 @@ p.m_8{
   .loading {
 	display: block !important;
   }
+
 
 /* Form */
 .form {
