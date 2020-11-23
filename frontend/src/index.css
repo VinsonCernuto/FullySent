@@ -1384,3 +1384,33 @@ p.m_8{
 	display: block;
   }
 
+.carousel-item{
+	height: 1200px;
+	width: 100%;
+}
+
+.carousel-caption{
+	text-align: center;
+}
+
+.content-team {
+	width:100%;
+	background: url(../src/images/Logos/fllysentautomotive2.png)no-repeat center top;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	background-size: auto;
+	background-position: center;
+	background-size: 100% 100%;
+	height:100%;
+	padding:15% 0;
+	color: white;
+	font-size: 50px;
+}
+
+.meetTheTeam h3{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+  
