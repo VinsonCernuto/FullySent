@@ -1385,6 +1385,7 @@ p.m_8{
   }
 
 
+
   .checkout-steps > div {
 	border-top: 0.3rem #c0c0c0 solid;
 	color: #c0c0c0;
@@ -1396,6 +1397,7 @@ p.m_8{
 	border-top-color: #f08000;
 	color: #f08000;
   }
+
 .carousel-item{
 	height: 1200px;
 	width: 100%;
@@ -1426,3 +1428,4 @@ p.m_8{
 	font-size: 30px;
 }
   
+
