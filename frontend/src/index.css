@@ -1360,7 +1360,7 @@ p.m_8{
   }
   .form label {
 	margin: 1rem 0;
-	display: block;
+
   }
 
   /* Dropdown */
@@ -1382,6 +1382,20 @@ p.m_8{
   }
   .dropdown:hover .dropdown-content {
 	display: block;
+  }
+
+
+
+  .checkout-steps > div {
+	border-top: 0.3rem #c0c0c0 solid;
+	color: #c0c0c0;
+	flex: 1;
+	padding: 1rem;
+	font-weight: bold;
+  }
+  .checkout-steps > div.active {
+	border-top-color: #f08000;
+	color: #f08000;
   }
 
 .carousel-item{
@@ -1414,3 +1428,4 @@ p.m_8{
 	font-size: 30px;
 }
   
+

@@ -19,13 +19,17 @@ import TeamScreen from "./screens/TeamScreen";
 import MediaScreen from "./screens/MediaScreen";
 import CompanyScreen from "./screens/CompanyScreen";
 import ContactScreen from "./screens/ContactScreen";
+import CommingSoonScreen from "./screens/CommingSoonScreen";
+// Products
 import ProductScreen from './screens/ProductScreen';
 import ProductItemScreen from './screens/ProductItemScreen';
 import CartScreen from './screens/CartScreen';
-import CommingSoonScreen from "./screens/CommingSoonScreen";
+// Signin
 import SigninScreen from './screens/SigninScreen';
 import RegisterScreen from './screens/RegisterScreen';
-
+// Shipping
+import ShippingAddressScreen from './screens/ShippingAddressScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
 
 function App() {
 
@@ -109,6 +113,8 @@ function App() {
 						<Route path="/comingSoon" exact={true} component={CommingSoonScreen} />
 						<Route path="/signin" component={SigninScreen}></Route>
 						<Route path="/register" component={RegisterScreen}></Route>
+						<Route path="/shipping" component={ShippingAddressScreen}></Route>
+						<Route path="/payment" component={PaymentMethodScreen}></Route>
 					</div>
 
 
