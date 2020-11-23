@@ -55,7 +55,7 @@ SO THAT I can find more information and content to consume
 
 ``` Technologys used ```
 HTMl, CSS, Bootstrap, Javascript, React, axios, express, font-awsome, react-leaf-carousel, react-paypal-button, redux, redux-thunk, react-router-dom 
-,bcryp, jsonwebtoken, mongooese, 
+,bcrypt, jsonwebtoken, mongooese, 
 
 
 ``` Databases used ```
