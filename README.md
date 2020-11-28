@@ -9,7 +9,7 @@
    ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
-  - [Usage](#usage)
+  - [ScreenShots](#ScreenShots)
   - [License](#license)
   - [Technologys and databases used](#Technologys)
   - [Tests](#tests)
@@ -18,8 +18,12 @@
   ## Installation
   
   
-  ## Usage
-  
+  ## ScreenShots
+  <img src=frontend\src\images\screenShots\homePage.PNG>
+  <br>
+  <img src= frontend\src\images\screenShots\homePage2.PNG>
+  <br>
+  <img src=frontend\src\images\screenShots\mediaPage.PNG>
   
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
