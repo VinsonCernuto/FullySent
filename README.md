@@ -1,5 +1,5 @@
 
-  <h1 align="center">Fully Sent Automotive Web Stor</h1>
+  <h1 align="center">Fully Sent Automotive Web Store</h1>
     
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)<br />
   
